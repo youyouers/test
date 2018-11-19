@@ -1,0 +1,40 @@
+1. Push to github repository
+# setup remote repository (also as “origin”)
+$ git remote add origin <URL of github repository>
+(if “fatal: remote origin already exists”, then “$ git remote rm origin”)
+# show remote setup
+$ git remote -v 
+# push files to github repository
+$ git push origin master
+
+2. Setup for diff and merge tool
+File path: C:\Users\Dr. Lis's New PC\.gitconfig
+Add the following lines in {…} to call for meld for comparison:
+{
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	path = C:/Program Files (x86)/Meld/meld/meld.exe
+[difftool]
+	prompt = false
+	
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	path = C:/Program Files (x86)/Meld/meld/meld.exe
+[mergetool]
+	prompt = false
+}
+
+3. Comparison of Revisions
+$ git difftool <version 1>  <version 2>
+
+4. Command for exit
+
+For "$ git log" : "q"
+
+For vimdiff GUI: "esc" + ":x!"
+
+
+
+
