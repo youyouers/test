@@ -41,6 +41,11 @@ Before comparing, run "$ git fetch" first.
 Then: $ git difftool <branch 1> <branch 2> 
 (For example: $ git difftool origin/master)
 
+6. Operations on branches
+$ git checkout <branch name> : change to branch
+$ git checkout -b <branch name> : create branch
+$ git branch -d <branch name> : delete branch
+$ git branch -m <old name> <new name> : change branch name
 
 
 
