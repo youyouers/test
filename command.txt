@@ -35,6 +35,13 @@ For "$ git log" : "q"
 
 For vimdiff GUI: "esc" + ":x!"
 
+5. Compare between branches
+
+Before comparing, run "$ git fetch" first.
+Then: $ git difftool <branch 1> <branch 2> 
+(For example: $ git difftool origin/master)
+
+
 
 
 
